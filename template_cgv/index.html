@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CGV</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&display=swap" rel="stylesheet">
+		 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://kit.fontawesome.com/544a3dab5a.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+	<body class="mov1">
+		<div class="wrap">
+			<div class="top-ad">
+				<div class="container">
+					<img id="topAdImg" src="img/top_ad.jpg" alt="개봉예정작">
+					<div id="top-ad-closer">X</div>
+				</div>
+			</div>
+			<div id="header">
+				<div class="header-top">
+					<div class="container">
+						<div>
+							<img src="img/header_logo.jpg" alt="cgv_logo">
+						</div>
+						<div>
+							<ul class="memberInfo">
+								<li><img src="img/header_pro.jpg" alt="promotion"></li>
+								<li>
+									<div><i class="fa-solid fa-lock"></i></div>
+									<div>로그인</div>
+								</li>
+								<li>
+									<div><i class="fa-solid fa-user-large"></i></div>
+									<div>회원가입</div>
+								</li>
+								<li>
+									<div><i class="fa-solid fa-user-plus"></i></div>
+									<div>My CGV</div>
+								</li>
+								<li>
+									<div><i class="fa-solid fa-headset"></i></div>
+									<div>고객센터</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="header-line">
+						<div class="container">
+							<div>
+								<ul class="mainMenu">
+									<li>영화</li>
+									<li>극장</li>
+									<li><strong>예매</strong></li>
+									<li>스토어</li>
+									<li>이벤트</li>
+									<li>혜택</li>
+								</ul>
+							</div>
+							<div class="searchArea">
+								<form action="#" id="movieSearch">
+									<input type="text" name="search" id="txtSearch">
+									<i class="fa-solid fa-magnifying-glass" id="btnSearSumbit"></i>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="subMenu">
+							<ul>
+								<li>
+									<ul>
+										<li class="title">영화</li>
+										<li>무비차트</li>
+										<li>아트하우스</li>
+										<li>ICECON</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="title">극장</li>
+										<li>CGV극장</li>
+										<li>특별관</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="title">예매</li>
+										<li>빠른예매</li>
+										<li>상영스케줄</li>
+										<li>English Ticketing</li>
+										<li>English Schedule</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="title">스토어</li>
+										<li>영화관람권</li>
+										<li>기프트카드</li>
+										<li>콤보</li>
+										<li>팝콘</li>
+										<li>음료</li>
+										<li>스낵</li>
+										<li>플레이존</li>
+										<li>씨네샵</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="title">이벤트</li>
+										<li>SPECIAL</li>
+										<li>영화/예매</li>
+										<li>멤버십/CLUB</li>
+										<li>CGV 극장별</li>
+										<li>제휴할인</li>
+										<li>당첨자 발표</li>
+										<li>종료된 이벤트</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="title">혜택</li>
+										<li>CGV 할인정보</li>
+										<li>CLUB 서비스</li>
+										<li>VIP 라운지</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="movie">
+				<div class="container">
+					<div class="videowrap">
+						<video id="mv" autoplay muted>	
+							
+						</video>
+						<div class="movie-contents">
+							<div class="mtitle"></div>
+							<div class="stitle"></div>
+							<div class="stitle"></div>
+							<div class="mdetail">
+								<div>상세보기 &gt;</div>
+								<div><i class="fa-solid fa-pause"></i><!--<i class="fa-solid fa-play"></i>--></div>
+								<div><!--<i class="fa-solid fa-volume-high"></i>--><i class="fa-solid fa-volume-xmark"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="movie-chart">
+				<div class="container">
+					<div class="chartBtn">
+						<h2>무비차트</h2>
+						<h2>상영예정작</h2>
+					</div>
+					<div>
+						<a href="#" class="btn">전체보기</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="moviePoster">
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
+							<div class="movieInfo">
+								<strong>더 배트맨</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
+							<div class="movieInfo">
+								<strong>더 배트맨</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
+							<div class="movieInfo">
+								<strong>더 배트맨</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
+							<div class="movieInfo">
+								<strong>더 배트맨</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
+							<div class="movieInfo">
+								<strong>더 배트맨</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+					</div>
+					<div class="moviePoster2">
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
+							<div class="movieInfo">
+								<strong>소피의 세계</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
+							<div class="movieInfo">
+								<strong>소피의 세계</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
+							<div class="movieInfo">
+								<strong>소피의 세계</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
+							<div class="movieInfo">
+								<strong>소피의 세계</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+						<div>						
+							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
+							<div class="movieInfo">
+								<strong>소피의 세계</strong>
+								<span>99%</span>
+								<span>예매율 36.0%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="event"></div>
+			<div id="special"></div>
+			<div id="promotion"></div>
+			<div id="notice"></div>
+			<div id="card"></div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
