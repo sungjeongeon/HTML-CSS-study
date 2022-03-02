@@ -41,6 +41,49 @@ const movieLists = [
 	},
 ];
 
+const movieChartList = [
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg",
+		title:"더 베트맨"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85693/85693_320.jpg",
+		title:"BTS PERMISSION TO DANCE ON STAGE - SEOUL: LIVE VIEWING"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85603/85603_320.jpg",
+		title:"극장판 주술회전"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85624/85624_320.jpg",
+		title:"언차티드"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85581/85581_320.jpg",
+		title:"안테벨룸"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85680/85680_320.jpg",
+		title:"에이핑크 스페셜 무비"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85664/85664_320.jpg",
+		title:"라이트 레이더스"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85652/85652_320.jpg",
+		title:"나이트메어 엘리"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85582/85582_320.jpg",
+		title:"피그"
+	},
+	{
+		url:"https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85635/85635_320.jpg",
+		title:"인민을위해 복무하라"
+	}
+];
+
 //window onload 이벤트
 window.onload = function(event) {
 
@@ -133,4 +176,30 @@ window.onload = function(event) {
 		document.body.classList.add("mov2");
 	}
 
+	//무비차트 슬라이더
+	const mc = new Swiper('#mc', {
+		// Optional parameters
+		slidesPerView: 5,
+		slidesPerGroup: 5,
+		spaceBetween: 30,
+		// Navigation arrows
+		navigation: {
+			nextEl: '#mc .swiper-button-next',
+			prevEl: '#mc .swiper-button-prev',
+		},
+	});
+
+	//무비차트 이미지
+	let div = img = null;
+	const swiperWrapper = document.querySelector(".swiper-wrapper");
+	for (let i = 0; i < movieChartList.length; i++) {
+		div = document.createElement("div");
+		img = document.createElement("img");
+		div.classList.add("swiper-slide");
+		img.src = movieChartList[i].url;
+		img.alt = movieChartList[i].title;
+
+		div.appendChild(img);
+		swiperWrapper.appendChild(div);
+	}
 };

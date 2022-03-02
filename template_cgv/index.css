@@ -234,13 +234,13 @@ ul {
 	text-decoration: none;
 	font-weight: bold;
 }
-.chartBtn h2:first-child {
+#movie-chart .chartBtn h2:first-child {
 	border-right: 1px solid #eeeeee;
 	padding-right: 10px;
 	color: black;
 	cursor: pointer;
 }
-.chartBtn h2:last-child {
+#movie-chart .chartBtn h2:last-child {
 	padding-left: 10px;
 	color: 	darkgray;
 	cursor: pointer;
@@ -253,10 +253,10 @@ body.mov1 .moviePoster {
 body.mov2 .moviePoster2 {
 	display: flex;
 }
-body.mov2 .chartBtn h2:first-child {
+body.mov2 #movie-chart .chartBtn h2:first-child {
 	color: darkgray;
 }
-body.mov2 .chartBtn h2:last-child {
+body.mov2 #movie-chart .chartBtn h2:last-child {
 	color: black;
 }
 
@@ -268,8 +268,8 @@ body.mov2 .chartBtn h2:last-child {
 	margin-right: 32px;
 }
 .moviePoster img, .moviePoster2 img  {
-	width: 170px;
-	border-radius: 	20px;
+	width: 100%;
+	border-radius: 	10px;
 }
 .movieInfo {
 	text-align: center;
@@ -285,10 +285,33 @@ body.mov2 .chartBtn h2:last-child {
 	text-decoration: none;
 	border: 1px solid  #eeeeee;
 	border-radius: 	15px;
-	padding: 3px 15px;
+	padding: 6px 15px;
 	box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
 }
 
 #event {
+	height: 360px;
+	padding-top: 50px;
+}
+.eventBtn {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.eventPoster {
+	display: flex;
+	justify-content: space-between;
+}
+.eventPoster img {
+	height: 207px;
+	border-radius: 	10px;
+	margin-bottom: 15px;
+}
+
+#special {
 	height: 460px;
+	padding-top: 50px;
+}
+#special img {
+	width: 	50%;
 }

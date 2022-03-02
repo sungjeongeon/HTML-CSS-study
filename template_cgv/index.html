@@ -9,8 +9,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&display=swap" rel="stylesheet">
+
+		<!--swiper-->
 		 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 		<script type="text/javascript" src="js/index.js"></script>
+
 		<script src="https://kit.fontawesome.com/544a3dab5a.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	</head>
@@ -163,12 +166,51 @@
 						<h2>상영예정작</h2>
 					</div>
 					<div>
-						<a href="#" class="btn">전체보기</a>
+						<a href="#" class="btn">전체보기 &gt;</a>
 					</div>
 				</div>
 				<div class="container">
 					<div class="moviePoster">
-						<div>						
+						<!-- Slider main container -->
+							<div id="mc" class="swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<!-- <div class="swiper-slide">
+										<div>
+											<div>
+												<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg" alt="제목" class="thumb">
+											</div>
+											<div>
+												<div>더 배트맨</div>
+												<div><span>86%</span><span>예매율 62.8%</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">Slide 2</div>
+									<div class="swiper-slide">Slide 3</div>
+									<div class="swiper-slide">Slide 4</div>
+									<div class="swiper-slide">Slide 5</div>
+									<div class="swiper-slide">Slide 6</div>
+									<div class="swiper-slide">Slide 7</div>
+									<div class="swiper-slide">Slide 8</div>
+									<div class="swiper-slide">Slide 9</div>
+									<div class="swiper-slide">Slide 10</div>
+									<div class="swiper-slide">Slide 11</div>
+									<div class="swiper-slide">Slide 12</div>
+									<div class="swiper-slide">Slide 13</div>
+									<div class="swiper-slide">Slide 14</div>
+									<div class="swiper-slide">Slide 15</div>
+									<div class="swiper-slide">Slide 16</div>
+									<div class="swiper-slide">Slide 17</div>
+									<div class="swiper-slide">Slide 18</div> -->
+								</div>
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+						<!-- <div>						
 							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85632/85632_320.jpg">
 							<div class="movieInfo">
 								<strong>더 배트맨</strong>
@@ -208,7 +250,7 @@
 								<span>예매율 36.0%</span>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="moviePoster2">
 						<div>						
 							<img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85630/85630_1000.jpg">
@@ -253,8 +295,46 @@
 					</div>
 				</div>
 			</div>
-			<div id="event"></div>
-			<div id="special"></div>
+			<div id="event">
+				<div class="container">
+					<div class="eventBtn">
+						<h2>EVENT</h2>
+						<div>
+							<!-- <i class="fa-solid fa-pause"></i> -->
+							<a href="#" class="btn">전체보기 &gt;</a>
+						</div>
+					</div>
+					<div class="eventPoster">
+						<div>
+							<img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34069/16455172595980.jpg">
+							<h4>[더 배트맨]IMAX 한정판 포스터 증정</h4>
+							<p>2022.02.22~2022.03.07</p>
+						</div>
+						<div>
+							<img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34069/16455172595980.jpg">
+							<h4>[더 배트맨]IMAX 한정판 포스터 증정</h4>
+							<p>2022.02.22~2022.03.07</p>
+						</div>
+						<div>
+							<img src="https://img.cgv.co.kr/WebApp/contents/eventV4/34069/16455172595980.jpg"><h4>[더 배트맨]IMAX 한정판 포스터 증정</h4>
+							<p>2022.02.22~2022.03.07</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="special">
+				<div class="container">
+					<div class="eventBtn">
+						<h2>특별관</h2>
+						<div>
+							<a href="#" class="btn">전체보기 &gt;</a>
+						</div>
+					</div>
+					<div>
+						<img src="https://img.cgv.co.kr//Front/Main/2021/1130/16382612660240.png">
+					</div>
+				</div>
+			</div>
 			<div id="promotion"></div>
 			<div id="notice"></div>
 			<div id="card"></div>
