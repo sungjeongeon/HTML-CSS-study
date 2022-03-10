@@ -1,21 +1,13 @@
-:root {
-	--small-padding: 1rem;
-	--medium-padding: 3rem;
-	--large-padding: 5rem;
-
-	--point-color: #ff385c;
-	--darkgray-color: #5e5e5e;
-}
-html {
-	font-size: 	10px;
-}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;;
 }
+html {
+	font-size: 	10px;
+}
 .container {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 ul {
@@ -35,14 +27,14 @@ a {
 	font-size: 1.3rem;
 	text-decoration: underline;
 	color: 	white;
-	padding-top: var(--small-padding);
-	padding-bottom: var(--medium-padding);
+	padding-top: 1rem;
+	padding-bottom: 3rem;
 }
 #header .headerTop {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: var(--small-padding);
+	padding-bottom: 1rem;
 }
 .headerTop .logo {
 	font-size: 	2.7rem;
@@ -57,36 +49,73 @@ a {
 .headerTop div:nth-child(2) a {
 	font-size: 1.5rem;
 	color: white;
-	padding-right: 	var(--medium-padding);
+	padding-right: 	3rem;
 }
-.headerTop div:last-child, .host{
+.headerTop div:last-child .rightHeaderTop, .host{
 	display: flex;
 	align-items: center;
 }
-.headerTop div:last-child a, .host a{
-	font-size: 	1.3rem;
+.headerTop div:last-child .rightHeaderTop a, .host a{
+	font-size: 	1.4rem;
 	color: 	white;
-	padding-right: var(--small-padding);
+	padding: 1rem;
+	border-radius: 	50px;
 }
-.headerTop div:last-child > i, .host i{
-	font-size: 1.5rem;
-	padding-right: var(--small-padding);
+.headerTop div:last-child .rightHeaderTop a:hover {
+	background-color: #3a3a3a;
 }
-.headerTop div:last-child .user, .host .user{
+.headerTop div:last-child .rightHeaderTop .user, .host .user{
 	height: 100%;
 	background-color: white;
 	border-radius: 50px;
-	border: 1px solid darkgray;
+	border: 1px solid #5e5e5e;
+	margin-left: 1rem;
+	cursor: pointer;
 }
-.headerTop div:last-child .user i , .host .user i{
-	color: 	var(--darkgray-color);
+.headerTop div:last-child .rightHeaderTop .user {
+	position: relative;
+	display: flex;
+    align-items: center;
+}
+.headerTop div:last-child .rightHeaderTop .user i , .host .user i{
+	color: 	#5e5e5e;
 	padding: 0.5rem;
 }
-.headerTop div:last-child .user i:first-child, .host .user i:first-child{
+.headerTop div:last-child .rightHeaderTop .user i:first-child, .host .user i:first-child{
+	font-size: 1.5rem;
 	padding: 1rem;
 }
-.headerTop div:last-child .user i:last-child, .host .user i:last-child{
+.headerTop div:last-child .rightHeaderTop .user i:last-child, .host .user i:last-child{
 	font-size: 3rem;
+}
+
+.headerTop div:last-child .userPage {
+	width: 11vw;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	padding: 1rem;
+	margin-top: 0.5rem;
+	display: none;
+}
+.headerTop div:last-child .userPage.active {
+	display: block;
+}
+.headerTop div:last-child .userPage a {
+	color: black;
+}
+.headerTop div:last-child .userPage li {
+	padding: 1.3rem;
+}
+.headerTop div:last-child .userPage li:first-child a {
+	font-weight: bold;
+}
+.headerTop div:last-child .userPage li:nth-child(2) {
+	border-bottom: 1px solid #e1e1e1;
+}
+.headerTop div:last-child .userPage li a {
+	font-size: 1.4rem;
+	color: black;
 }
 
 /*sticky header*/
@@ -107,15 +136,15 @@ a {
 }
 #headerTop2 .logo {
 	font-size: 2.7rem;
-	color: var(--point-color);
+	color: #ff385c;
 }
 #headerTop2 .logo a {
-	color: var(--point-color);
+	color: #ff385c;
 	font-weight: bold;
 }
 #headerTop2 .search {
 	border-radius: 50px;
-    border: 1px solid darkgray;
+    border: 1px solid #5e5e5e;
     width: 15vw;
     display: flex;
     justify-content: space-between;
@@ -128,7 +157,7 @@ a {
     padding-left: 1rem;
 }
 #headerTop2 .search i {
-	background-color: var(--point-color);
+	background-color: #ff385c;
     width: 2vw;
     height: 2vw;
     border-radius: 50px;
@@ -154,9 +183,9 @@ a {
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 	50px;
-	margin-bottom: var(--large-padding);
-	padding: var(--medium-padding);
-	padding-right: var(--small-padding);
+	margin-bottom: 5rem;
+	padding: 3rem;
+	padding-right: 1rem;
 }
 .headerRes .resBar ul li:first-child {
 	font-weight: bold;
@@ -165,10 +194,10 @@ a {
 }
 .headerRes .resBar ul li:last-child {
 	font-size: 1.4rem;
-	color: var(--darkgray-color);
+	color: #5e5e5e;
 }
 .headerRes .resBar i{
-	background-color: var(--point-color);
+	background-color: #ff385c;
 	width: 3vw;
     height: 3vw;
 	border-radius: 50px;
@@ -190,7 +219,7 @@ a {
     background-color: #ff385c;
     border-radius: 10px;
     color: white;
-    margin-bottom: var(--large-padding);
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +229,7 @@ a {
     flex-direction: column;
 }
 .box h1 {
-	padding-bottom: var(--medium-padding);
+	padding-bottom: 3rem;
 	font-size: 	4rem;
 	 width: 85%;
 }
@@ -232,7 +261,7 @@ a {
   	width: 100%;
 }
 .box2 h1 {
-	padding-bottom: var(--medium-padding);
+	padding-bottom: 3rem;
 	font-size: 4rem;
 }
 .box2 a {
@@ -248,11 +277,11 @@ a {
 
 
 #section1 {
-	padding-top: var(--large-padding);
+	padding-top: 5rem;
 }
 #section1 h1 {    
 	font-size: 3.6rem;
-	padding-bottom: var(--medium-padding);
+	padding-bottom: 3rem;
 }
 #section1 .city {
 	display: flex;
@@ -281,7 +310,7 @@ a {
 	font-size: 	2rem;
 }
 #section1 .city div:first-child {
-	background-color: var(--point-color);
+	background-color: #ff385c;
 }
 #section1 .city div:nth-child(2) {
 	background-color: #ff3d38;
@@ -295,12 +324,12 @@ a {
 }
 
 #section2 {
-	padding-top: var(--large-padding);
-	padding-bottom: var(--large-padding);
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 #section2 h1 {
 	font-size: 3.6rem;
-	padding-bottom: var(--medium-padding);
+	padding-bottom: 3rem;
 }
 #section2 .experience {
 	display: flex;
@@ -335,7 +364,7 @@ a {
 	font-size: 4rem;
 	width: 50%;
 }
-#button {
+.button {
 	padding: 10px 15px;
 	background-color: white;
 	color: 	black;
@@ -345,8 +374,8 @@ a {
 }
 
 #footer1 {
-	padding-top: var(--large-padding);
-	padding-bottom: var(--large-padding);
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 #footer1 div {
 	position: relative;
@@ -375,7 +404,7 @@ a {
 }
 #footer2 ul li {
 	font-size: 	1.4rem;
-	margin-bottom: var(--medium-padding);
+	margin-bottom: 3rem;
 }
 #footer2 ul li:first-child {
 	font-weight: bold;
