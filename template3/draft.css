@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5em;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: 	black;
+}
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0 10px 0;
+}
+#header .logo a {
+	font-weight: bold;
+}
+#header .menu, .login {
+	display: flex;
+	align-items: center;
+}
+.menu li , .login li {
+	padding: 10px;
+}
+.login button {
+	background-color: transparent;
+	border: 1px solid black;
+	border-radius: 	50px;
+	padding: 	10px;
+}
+
+#mainSection {
+	display: flex;
+}
+#mainSection .mainMenu {
+	width: 	35%;
+}
+#mainSection .mainMenu	.bgGray {
+	background-color: #f1f1f1;
+}
+#mainSection .mainMenu > div {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#mainSection .mainMenu h3 {
+	font-size: 	28px;
+}
+#mainSection .mainMenu i {
+	font-size: 35px;
+}
+#mainSection .mainMenu p {
+	text-align: center;
+}
+#mainSection .mainImage {
+	width: 	30%;
+}
+#mainSection .mainImage img {
+	width: 100%;
+    height: 100%;
+}
+
+#mainArticle {
+	display: flex;
+	padding: 10px 0 10px 0;
+}
+#mainArticle .contents:first-child {
+	width: 	20%;
+	padding-right: 30px;
+}
+#mainArticle .contents:nth-child(2) {
+	width: 	30%;
+	padding-right: 20px;
+} 
+#mainArticle > div:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#mainArticle .contents h3 {
+	font-size: 	27px;
+	margin-bottom: 10px;
+}
+#mainArticle .contents p {
+	margin-bottom: 10px;
+}
+#mainArticle .contents span {
+	box-shadow: inset 0 -3px 0 black;
+}
+#mainArticle div:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}    
+#mainArticle div:nth-child(2) i {
+	font-size: 64px;
+	margin-bottom: 10px;
+	color: 	#bccbdb;
+}
+#mainArticle div:last-child	{
+	width: 	50%;
+	text-align: center;
+	background-color: #bccbdb;
+	background: linear-gradient(0deg, #fff 25%, rgba(0,38,84,0) 25%), linear-gradient(0deg, #bbcbdb 75%, #fff 75%);
+}
+#mainArticle div:last-child img {
+	width: 70%;
+    height: 430px;
+    margin: 0 auto;
+}
+
+#footer > div:first-child {
+	background-image: url(https://cdn.pixabay.com/photo/2018/10/09/10/01/architecture-3734552_960_720.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+	background-position: bottom;
+	background-color: #cfb1b8;
+	padding: 150px 0 150px 0;
+}
+#footer > div:first-child > * {
+	color: white;
+}
+#footer .footerContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 	50%;
+	margin: 0 auto;
+}
+#footer .footerContent h3 {
+	font-size: 	30px;
+	padding-bottom: 10px;
+}
+#footer .footerContent p {
+	padding-bottom: 10px;
+}
+#footer .icon {
+	display: flex;
+	justify-content: center;
+	width: 	50%;
+	margin: 0 auto;
+}
+#footer .icon i {
+	padding-right: 15px;
+}
+#footer .icon i:last-child{
+	padding-right: 0;
+}
+#footer > div:nth-child(2) {
+	background-color: #bccbdb;
+	padding: 80px 0 80px 0;
+}
+#footer > div:nth-child(2) > div:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+	width: 	60%;
+	margin: 0 auto;
+}
+#footer .whiteBox {
+	background-color: white;
+	padding: 15px;
+	text-align: center;
+	width: 47%;
+}
+#footer .whiteBox > * {
+	padding-bottom: 10px;
+}
+#footer .whiteBox i {
+	font-size: 	30px;
+	color: 	#bccbdb;
+}
+
+#footer > div:last-child {
+	background-color: darkgray;
+}
+#footer > div:last-child p {
+	width: 	35%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	color: 	white;
+}
