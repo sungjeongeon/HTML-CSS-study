@@ -26,6 +26,7 @@ main {
 	position: absolute;
 	top: 0;
 	background-color: #f0eee4;
+	width: 100%;
 }
 #headerTop {
 	display: flex;
@@ -40,7 +41,11 @@ main {
 #headerLogo {
 	display: block;
     margin: 10px 50px;
-    transition: all 0.5s linear;
+    transition: all 0.6s linear;
+    /*opacity: 1;
+    position: relative;*/
+    visibility: visible;
+    top: 0;
 }
 #headerLogo img{
 	width: 	100%;
@@ -104,7 +109,11 @@ main {
 	display: none;
 }
 .toggleScroll #headerLogo {
-	display: none;
+	opacity: 0;
+    visibility: hidden;
+    top: -100px;
+    position: absolute;
+    transition: all 1s linear;
 }
 .toggleScroll #headerScroll {
 	background-color: white;
@@ -193,7 +202,7 @@ h1, h2, h3 {
 .container {
 	max-width: 140rem;
 	margin: 0 auto;
-	width: 98vw;
+	width: 100%;
 	padding: 3.4rem 1.6rem;
 }
 h1 {
@@ -417,6 +426,7 @@ section.joinClub {
 }
 section.joinClub img {
 	margin-right: 20px;
+	max-width: 400px;
 }
 section.joinClub h3 {
 	font-size: 	2.2rem;
@@ -427,7 +437,7 @@ section.joinClub p {
 	padding-bottom: 20px;
 }
 section.joinClub > div {
-	width: 	460px;
+	width: 	400px;
 }
 
 section.footerIcon {
@@ -479,7 +489,7 @@ section.footerMenu ul li:first-child {
 }
 
 footer {
-	color: 	darkgray;
+	color: darkgray;
 	font-size: 	1.3rem;
 }
 footer .footerContainer {
@@ -504,12 +514,18 @@ footer > div:nth-of-type(2) .footerContainer div:first-child {
 
 @media (max-width: 1024px) {
 	html {
-		font-size: 	59%;
+		font-size: 	55%;
 	}
 	.mainBanner .imgContent {
 		text-align: center;
 		left: 	50%;
 		transform: 	translate(-50%, -25%);
+	}
+	.mainBanner .imgContent > div {
+		display: flex;
+	}
+	.mainBanner .imgContent > div button {
+		margin: 5px;
 	}
 	#headerLogo {
 		margin: 10px 20px;
@@ -569,13 +585,16 @@ footer > div:nth-of-type(2) .footerContainer div:first-child {
 	    color: black;
 	    top: 55px;
 	    left: 0;
-	    width: 50%;
+	    width: 55%;
 	    position: fixed;
 	    max-width: 50.6rem;
 	    height: 100vh;
 	    overflow: scroll;
 	    transition: 0.5s linear;
 	}
+	.headerMenu::-webkit-scrollbar { width: 6px; } 
+	.headerMenu::-webkit-scrollbar-track { background-color:#fff; } /* 스크롤 바 밑의 배경 */
+	.headerMenu::-webkit-scrollbar-thumb { background: #dedcd1; border-radius: 10px; } /* 실질적 스크롤 바 */
 	#headerScroll.toggleMenu .headerIcon {
 		display: none;
 	}
@@ -605,11 +624,59 @@ footer > div:nth-of-type(2) .footerContainer div:first-child {
      #headerScroll.toggleMenu #toggleHeaderTop {
      	background-color: white;
      }	
+    section.joinClub img {
+	    max-width: 350px;
+	}
+	section.joinClub > div {
+	    max-width: 350px;
+	}
 }
 
 @media (max-width: 768px) {
-	.container {
-		width: 	90vw;
+	.mainBanner img {
+	    width: 100%;
+	    object-fit: cover;
+	    height: 550px;
+	}
+	.mainBanner .imgContent {
+	    transform: translate(-50%, -10%);
+	}
+	section.color .container {
+		flex-direction: column;
+	}
+	section.color .container > div {
+		margin-right: 0;
+		margin-bottom: 	25px;
+	}
+	section.fullImg {
+		display: block;
+		flex-direction: column;
+    	align-items: center;
+	}
+	section.fullImg > div{
+		width: 	100%;
+    }
+	section.fullImg2 .container{
+		display: block;
+	}
+	section.fullImg2 .container > div:first-child {
+	    padding-right: 0px;
+	    align-items: center;
+	    margin-bottom: 25px;
+	}
+	section.scenes .container {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+	section.scenes .container > div{
+	 	width: 80%;
+        margin-right: 0px; 
+        margin-bottom: 25px;
+	}
+	section.joinClub {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

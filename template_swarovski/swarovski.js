@@ -1,14 +1,13 @@
-
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 1, //동시에 보여줄 슬라이드 갯수
-  slidesPerGroup: 1, //그룹으로 묶을 수
-  spaceBetween: 10, //슬라이드간 간격
+  slidesPerView: 1, //동시에 보여줄 슬라이드 갯수(768px 미만일때)
+  slidesPerGroup: 1, //그룹으로 묶을 수(768px 미만일때)
+  spaceBetween: 10, //슬라이드간 간격(768px 미만일때)
   breakpoints: { //반응형 조건
-    768: {
+    768: { //768px 이상일때
       slidesPerView:2,
       slidesPerGroup: 2,
     },
-    1024: {
+    1024: { //1024px 이상일때
       slidesPerView:4,
       slidesPerGroup: 4,
     },
@@ -34,9 +33,7 @@ const scrollLogo = document.getElementById("scrollLogo");
 const headerScroll = document.querySelector("#headerScroll");
 const toggleHeaderTop = document.getElementById("toggleHeaderTop");
 
-var mql = window.matchMedia("screen and (max-width: 1024px)"); 
-
-if (mql.matches) { 
+if (window.matchMedia('screen and (max-width: 1024px)').matches) { 
   barBtn.addEventListener("click", function() {
     headerScroll.classList.toggle('toggleMenu');
     if (headerScroll.classList.contains('toggleMenu')){
@@ -85,6 +82,7 @@ window.addEventListener("scroll", function() {
   }
 })
  
-/*barBtn.addEventListener("click", function() {
-  headerScroll.classList.toggle('toggleMenu');
-})*/
+/*반응형 reize시 적용 안되는거 해결
+window.onresize = function(){ 
+  document.location.reload(); 
+};*/
