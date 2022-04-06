@@ -33,11 +33,13 @@ const scrollLogo = document.getElementById("scrollLogo");
 const headerScroll = document.querySelector("#headerScroll");
 const toggleHeaderTop = document.getElementById("toggleHeaderTop");
 
-if (window.matchMedia('screen and (max-width: 1024px)').matches) { 
-  barBtn.addEventListener("click", function() {
+barBtn.addEventListener("click", function() {
     headerScroll.classList.toggle('toggleMenu');
     if (headerScroll.classList.contains('toggleMenu')){
       barBtni.className = "fa-solid fa-x";
+      for (i = 0; i < subnav.length; i++) {
+      subnav[i].style.color = "black";
+    }
     } else {
       barBtni.className = "fa-solid fa-bars";
         /*if(window.scrollY >= 100) {
@@ -52,7 +54,9 @@ if (window.matchMedia('screen and (max-width: 1024px)').matches) {
         }*/
     }
   });
-} else { 
+
+
+if (!window.matchMedia('screen and (max-width: 1024px)').matches){ 
   /*화면의 너비가 1024이상*/
   header.addEventListener("mouseover", function(event) {
     header.style.backgroundImage = `linear-gradient(0.25turn, #f0eee4, #f0eee4)`;
@@ -80,7 +84,7 @@ window.addEventListener("scroll", function() {
   } else {
     header.classList.remove('toggleScroll');
   }
-})
+});
  
 /*반응형 reize시 적용 안되는거 해결
 window.onresize = function(){ 

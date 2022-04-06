@@ -603,9 +603,6 @@ footer > div:nth-of-type(2) .footerContainer div:first-child {
     	margin-left: 124px;
     	top: 0;
 	}
-	.toggleScroll #headerScroll.toggleMenu .subnav a {
-		color: 	darkgray;
-	}
 	.toggleScroll #headerScroll.toggleMenu .subnav:hover a {
 		border: none;
 	} 
